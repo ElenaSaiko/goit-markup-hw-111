@@ -1,0 +1,117 @@
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*Основні*/
+
+.container {
+  max-width: 375px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+/*Footer*/
+.page-footer {
+  background-color: #0e1823;
+  padding-top: 80px;
+}
+
+.footer-container {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #1b414b;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 355px;
+}
+
+.logo {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.03em;
+  color: #fbfbfb;
+}
+
+.footer-logo {
+  padding-top: 42px;
+  padding-left: 28px;
+  display: block;
+}
+
+.a.logo .footer-logo {
+  margin-right: 39px;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.footer-btn-about,
+.footer-btn-yachts,
+.footer-btn-reviews {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 130%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fbfbfb;
+  display: block;
+}
+
+.section-list {
+  display: flex; /* Устанавливаем flex-контейнер */
+  list-style-type: none; /* Убираем стандартные маркеры списка */
+  padding: 0; /* Убираем отступы по умолчанию */
+  margin: 0; /* Убираем внешние отступы по умолчанию */
+}
