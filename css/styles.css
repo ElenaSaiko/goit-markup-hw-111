@@ -41,6 +41,8 @@ button {
 
 .container {
   max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -58,60 +60,112 @@ button {
 /*Footer*/
 .page-footer {
   background-color: #0e1823;
-  padding-top: 80px;
+  padding: 80px 0;
 }
 
 .footer-container {
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: #1b414b;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  max-width: 355px;
-}
-
-.logo {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: -0.03em;
-  color: #fbfbfb;
+  padding: 10px;
+  background-color: #1b414b;
+  border-radius: 16px;
 }
 
 .footer-logo {
-  padding-top: 42px;
-  padding-left: 28px;
-  display: block;
-}
-
-.a.logo .footer-logo {
-  margin-right: 39px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fbfbfb;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-right: 39px;
 }
 
 .footer-nav {
+  margin-bottom: 80px;
+}
+
+.footer-nav-list {
   display: flex;
   align-items: center;
   gap: 4px;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-btn-about,
 .footer-btn-yachts,
 .footer-btn-reviews {
+  display: inline-block;
+  padding: 15px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 9px;
-  line-height: 130%;
+  line-height: 1.3;
   text-transform: uppercase;
   text-align: center;
   color: #fbfbfb;
-  display: block;
+  background-color: rgba(251, 251, 251, 0.3);
+  text-decoration: none;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
 }
 
-.section-list {
-  display: flex; /* Устанавливаем flex-контейнер */
-  list-style-type: none; /* Убираем стандартные маркеры списка */
-  padding: 0; /* Убираем отступы по умолчанию */
-  margin: 0; /* Убираем внешние отступы по умолчанию */
+.footer-social {
+  margin-top: 40px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+  text-align: center;
+  padding: 0 38px;
+}
+
+.text-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-copyright {
+  margin-top: 82px;
+  text-align: center;
+}
+
+.text-copyright-yacht,
+.text-copyright-privacy {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: rgba(251, 251, 251, 0.4);
+  margin: 0;
 }
